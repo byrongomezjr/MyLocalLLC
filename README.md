@@ -1,12 +1,83 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# My Local LLC
 
-# Getting Started
+A React Native application connecting local businesses with their community: This application serves communities by promoting local businesses within specific cities, counties, towns, etc.
+Business owners are able to sign up and promote their LLC's with people that need their services
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Features
 
-## Step 1: Start Metro
+- **My LLC Tab**: Browse and discover local businesses (LLCs) in your area
+- **Messages Tab**: Direct messaging with local business owners
+- **Advertise Tab**: Create and manage your business listings
+- **Settings Tab**: Manage your profile and app preferences
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+- Node.js (v18 or higher)
+- React Native development environment
+- Android Studio (for Android development)
+- Xcode (for iOS development - macOS only)
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. For iOS, install CocoaPods dependencies:
+   ```bash
+   cd ios && pod install && cd ..
+   ```
+
+### Running the App
+
+#### Android
+```bash
+npm run android
+# or
+yarn android
+```
+
+#### iOS
+```bash
+npm run ios
+# or
+yarn ios
+```
+
+### Development Server
+```bash
+npm start
+# or
+yarn start
+```
+
+## App Structure
+
+```
+src/
+├── components/          # Reusable UI components
+├── navigation/          # Navigation configuration
+├── screens/            # Main app screens
+│   ├── MyLLCScreen.tsx     # Home/discovery screen
+│   ├── MessagesScreen.tsx  # Messaging interface
+│   ├── AdvertiseScreen.tsx # Business listing creation
+│   └── SettingsScreen.tsx  # User settings
+└── types/              # TypeScript type definitions
+```
+
+## Design Principles
+
+- **Mobile-first**: Optimized for mobile user experience
+- **Local-focused**: Emphasizes geographic proximity
+- **Business-friendly**: Easy for small businesses to create listings
+- **Community-driven**: Facilitates local connections
 
 To start the Metro dev server, run the following command from the root of your React Native project:
 
@@ -95,3 +166,11 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+# License
+
+Proprietary - All rights reserved
+
+# Contact
+
+For any questions, please contact the development team at byrongomezjr@pm.me
