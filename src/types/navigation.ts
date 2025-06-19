@@ -1,5 +1,5 @@
 export type RootTabParamList = {
-    MyLLC: undefined;
+    Explore: undefined;
     Messages: undefined;
     Advertise: undefined;
     Settings: undefined;

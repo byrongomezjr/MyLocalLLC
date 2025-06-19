@@ -1,10 +1,10 @@
 // Typography system for My Local LLC
 export const typography = {
-    // Font families
-    primary: 'Poppins-Regular',
-    primaryMedium: 'Poppins-Medium',
-    primarySemiBold: 'Poppins-SemiBold',
-    primaryBold: 'Poppins-Bold',
+    // Font families - Updated to use Inter
+    primary: 'Inter-Regular',
+    primaryMedium: 'Inter-Medium',
+    primarySemiBold: 'Inter-SemiBold',
+    primaryBold: 'Inter-Bold',
 
     // Fallback fonts (in case custom fonts don't load)
     fallback: {
@@ -56,6 +56,8 @@ export const getFontFamily = (weight: 'regular' | 'medium' | 'semibold' | 'bold'
 };
 
 // Pre-defined text styles
+import { colors } from './colors';
+
 export const textStyles = {
     // Headers
     h1: {
@@ -77,6 +79,23 @@ export const textStyles = {
         fontFamily: getFontFamily('semibold'),
         fontSize: typography.sizes.xl,
         lineHeight: typography.sizes.xl * typography.lineHeights.normal,
+    },
+
+    // Header title for all tabs
+    headerTitle: {
+        fontFamily: getFontFamily('bold'),
+        fontSize: typography.sizes['2xl'],
+        lineHeight: typography.sizes['2xl'] * typography.lineHeights.tight,
+        color: colors.text.headerTitle, // Black color
+        fontWeight: '700' as const,
+    },
+
+    // Header subtitle for all tabs
+    headerSubtitle: {
+        fontFamily: getFontFamily('regular'),
+        fontSize: typography.sizes.base,
+        lineHeight: typography.sizes.base * typography.lineHeights.normal,
+        color: colors.text.headerTitle, // Black color (same as title)
     },
 
     // Body text

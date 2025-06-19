@@ -48,6 +48,7 @@ export const colors = {
         secondary: '#6b7280',    // Secondary text
         light: '#9ca3af',        // Light text
         inverse: '#ffffff',      // Text on colored backgrounds
+        headerTitle: '#000000',  // Header title color (black)
         headerSubtitle: '#e8f5e8', // Subtitle on green header
     },
 

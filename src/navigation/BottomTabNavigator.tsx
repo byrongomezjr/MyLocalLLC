@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Text, View, StyleSheet } from 'react-native';
 import { colors } from '../assets/colors';
 
-import MyLLCScreen from '../screens/MyLLCScreen';
+import ExploreScreen from '../screens/ExploreScreen';
 import MessagesScreen from '../screens/MessagesScreen';
 import AdvertiseScreen from '../screens/AdvertiseScreen';
 import SettingsScreen from '../screens/SettingsScreen';
@@ -49,11 +49,11 @@ const BottomTabNavigator = () => {
       }}
     >
       <Tab.Screen
-        name="MyLLC"
-        component={MyLLCScreen}
+        name="Explore"
+        component={ExploreScreen}
         options={{
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon="🏪" label="My LLC" />
+            <TabIcon focused={focused} icon="🏪" label="Explore" />
           ),
         }}
       />

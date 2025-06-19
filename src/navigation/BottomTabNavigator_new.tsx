@@ -4,7 +4,7 @@ import { Text, View, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { colors } from '../assets/colors';
 
-import MyLLCScreen from '../screens/MyLLCScreen';
+import ExploreScreen from '../screens/ExploreScreen';
 import MessagesScreen from '../screens/MessagesScreen';
 import AdvertiseScreen from '../screens/AdvertiseScreen';
 import SettingsScreen from '../screens/SettingsScreen';
@@ -51,11 +51,11 @@ const BottomTabNavigator = () => {
       }}
     >
       <Tab.Screen
-        name="MyLLC"
-        component={MyLLCScreen}
+        name="Explore"
+        component={ExploreScreen}
         options={{
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} iconName="business" label="My LLC" />
+            <TabIcon focused={focused} iconName="business" label="Explore" />
           ),
         }}
       />

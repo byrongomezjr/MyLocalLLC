@@ -10,10 +10,11 @@ import {
   Alert,
 } from 'react-native';
 import { colors } from '../assets/colors';
+import { textStyles } from '../assets/typography';
 
 const AdvertiseScreen = () => {
   const [businessName, setBusinessName] = useState('');
-  const [category, setCategory] = useState('');
+  const [_category, setCategory] = useState('');
   const [description, setDescription] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
@@ -171,14 +172,11 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
   },
   headerTitle: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    color: 'white',
+    ...textStyles.headerTitle,
     marginBottom: 5,
   },
   headerSubtitle: {
-    fontSize: 16,
-    color: '#e2e8f0',
+    ...textStyles.headerSubtitle,
   },
   content: {
     flex: 1,
